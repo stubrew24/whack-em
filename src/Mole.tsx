@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useEffect } from "react";
+import "./Mole.css";
 
 interface IProps {
   position: [number, number];
@@ -14,7 +15,7 @@ const Mole: FunctionComponent<IProps> = ({
   clickMole
 }) => {
   useEffect(() => {
-    const interval = setInterval(() => removeMole(id), 900);
+    const interval = setInterval(() => removeMole(id), 600);
     return () => {
       clearInterval(interval);
     };
@@ -22,15 +23,8 @@ const Mole: FunctionComponent<IProps> = ({
 
   return (
     <div
-      style={{
-        position: "absolute",
-        top: position[0],
-        left: position[1],
-        backgroundColor: "blue",
-        width: "100px",
-        height: "100px",
-        borderRadius: "50px"
-      }}
+      id="mole"
+      style={{ top: position[0], left: position[1] }}
       onClick={() => clickMole(id)}
     ></div>
   );

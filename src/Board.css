@@ -1,0 +1,49 @@
+:root {
+  --text-white: rgb(255, 255, 255);
+  --mid-blue: rgb(0, 0, 200);
+  --dark-blue: rgb(0, 0, 150);
+  --light-pink: rgb(229, 208, 255);
+  --dark-pink: rgb(191, 139, 255);
+}
+
+#board {
+  position: relative;
+  top: 4vh;
+  max-width: 400px;
+  /* height: auto; */
+  height: 92vh;
+  margin: 0 auto;
+  border: 2px solid var(--mid-blue);
+  box-shadow: 5px 5px var(--dark-blue);
+  border-radius: 4px;
+  background-color: white;
+}
+
+.button {
+  position: relative;
+  display: block;
+  left: 20%;
+  width: 60%;
+  background-color: var(--light-pink);
+  border: 2px solid var(--dark-pink);
+  border-radius: 3px;
+  box-shadow: 3px 3px var(--dark-pink);
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--dark-blue);
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: var(--dark-pink);
+  border-radius: 3px;
+  box-shadow: 3px 3px var(--light-pink);
+  color: white;
+}
+
+#buttons {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
