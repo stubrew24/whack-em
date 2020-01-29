@@ -4,7 +4,17 @@
   --dark-blue: rgb(0, 0, 150);
 }
 
-#appbar {
+#logo {
+  position: absolute;
+  width: "100px";
+  height: "100px";
+  border: 2px solid var(--mid-blue);
+  box-shadow: 5px 5px var(--dark-blue);
+  border-radius: 4px;
+  background-color: white;
+}
+
+# #appbar {
   position: absolute;
   top: 0;
   left: 0;

@@ -37,7 +37,7 @@ const Board: React.FunctionComponent = () => {
   const StartScreen = () => {
     return (
       <div>
-        <h1 id="title">Whack'em</h1>
+        <h1 id="title">whack'em</h1>
         <div id="buttons">
           {Button("Easy")}
           {Button("Medium")}
