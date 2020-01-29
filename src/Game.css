@@ -52,7 +52,23 @@
   left: 0;
   width: 100%;
   top: 40%;
-  height: 100px;
+  height: 130px;
   background-color: var(--mid-blue);
   color: var(--text-white);
+}
+
+#reset-button {
+  position: relative;
+  display: block;
+  left: 20%;
+  width: 60%;
+  background-color: var(--light-pink);
+  border: 2px solid var(--dark-pink);
+  border-radius: 3px;
+  box-shadow: 3px 3px var(--dark-pink);
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--dark-blue);
+  padding: 10px;
 }

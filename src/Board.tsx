@@ -51,10 +51,21 @@ const Board: React.FunctionComponent = () => {
     );
   };
 
+  const resetGame = () => {
+    setLevel("");
+    setActive(false);
+    setTimer(15);
+  };
+
   return (
     <div id="board">
       {level ? (
-        <Game active={active} timer={timer} level={level} />
+        <Game
+          active={active}
+          timer={timer}
+          level={level}
+          resetGame={resetGame}
+        />
       ) : (
         <StartScreen />
       )}

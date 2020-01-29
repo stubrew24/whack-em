@@ -6,9 +6,15 @@ interface IProps {
   active: boolean;
   timer: number;
   level: string;
+  resetGame: () => void;
 }
 
-const Game: FunctionComponent<IProps> = ({ active, timer, level }) => {
+const Game: FunctionComponent<IProps> = ({
+  active,
+  timer,
+  level,
+  resetGame
+}) => {
   const [score, setScore] = useState<number>(0);
   const [moles, setMoles] = useState<{ id: number; x: number; y: number }[]>(
     []
@@ -101,6 +107,9 @@ const Game: FunctionComponent<IProps> = ({ active, timer, level }) => {
       <div id="gameover" style={{ display: active ? "none" : "block" }}>
         <h1>Game Over!</h1>
         <h4>You scored {score} points.</h4>
+        <div className="button" onClick={resetGame}>
+          Play Again
+        </div>
       </div>
 
       {moles.map(mole => (
