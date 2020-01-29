@@ -1,10 +1,50 @@
+:root {
+  --light-red: rgb(240, 172, 172);
+  --dark-red: rgb(249, 126, 126);
+
+  --light-green: rgb(144, 215, 164);
+  --dark-green: rgb(78, 191, 110);
+
+  --light-skyblue: rgb(120, 196, 253);
+  --dark-skyblue: rgb(62, 172, 255);
+}
+
 #mole {
   margin: 20px;
   position: absolute;
-  background-color: rgb(200, 0, 0);
-  box-shadow: 2px 2px rgb(150, 0, 0);
   width: 50px;
   height: 50px;
-  border: 2px solid rgb(200, 0, 0);
   border-radius: 3px;
+}
+
+.easy {
+  background-color: var(--light-skyblue);
+  box-shadow: 2px 2px var(--dark-skyblue);
+  border: 2px solid var(--light-skyblue);
+}
+
+.med-1 {
+  background-color: var(--light-skyblue);
+  box-shadow: 2px 2px var(--dark-skyblue);
+  border: 2px solid var(--light-skyblue);
+}
+
+.med-2 {
+  background-color: var(--light-red);
+  box-shadow: 2px 2px var(--dark-red);
+  border: 2px solid var(--light-red);
+}
+
+.med-3 {
+  background-color: var(--light-green);
+  box-shadow: 2px 2px var(--dark-green);
+  border: 2px solid var(--light-green);
+}
+
+.hard-1 {
+  border-radius: 0%;
+}
+
+.hard-2 {
+  border-radius: 50% !important;
 }

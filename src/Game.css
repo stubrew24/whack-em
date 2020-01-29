@@ -4,19 +4,6 @@
   --dark-blue: rgb(0, 0, 150);
 }
 
-/* #board {
-  position: relative;
-  top: 4vh;
-  max-width: 400px;
-  height: auto;
-  height: 92vh;
-  margin: 0 auto;
-  border: 2px solid var(--mid-blue);
-  box-shadow: 5px 5px var(--dark-blue);
-  border-radius: 4px;
-  background-color: white;
-} */
-
 #appbar {
   position: absolute;
   top: 0;
@@ -33,14 +20,21 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 50%;
+  width: 33%;
 }
 
 #timer {
   position: absolute;
   right: 0;
   top: 0;
-  width: 50%;
+  width: 33%;
+}
+
+#high-score {
+  position: absolute;
+  left: 33%;
+  top: 0;
+  width: 33%;
 }
 
 #gameover {
