@@ -97,6 +97,7 @@ const Game: FunctionComponent<IProps> = ({ active, timer, level }) => {
           {timer}
         </div>
       </div>
+
       <div id="gameover" style={{ display: active ? "none" : "block" }}>
         <h1>Game Over!</h1>
         <h4>You scored {score} points.</h4>
